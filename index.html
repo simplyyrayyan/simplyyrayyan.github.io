@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/main.js" defer></script>
+
+</head>
+<body>
+    <div id="calculator">
+
+        <div id="display">0</div>
+
+        <div id="buttons">
+
+            <button id="btn-seven" onclick="appendToDisplay('7')">7</button>
+            <button id="btn-eight" onclick="appendToDisplay('8')">8</button>
+            <button id="btn-nine" onclick="appendToDisplay('9')">9</button>
+            <button id="btn-plus" onclick="setOperatorTo('+')">+</button>
+            <button id="btn-four" onclick="appendToDisplay('4')">4</button>
+            <button id="btn-five" onclick="appendToDisplay('5')">5</button>
+            <button id="btn-six" onclick="appendToDisplay('6')">6</button>
+            <button id="btn-minus" onclick="setOperatorTo('-')">-</button>
+            <button id="btn-one" onclick="appendToDisplay('1')">1</button>
+            <button id="btn-two" onclick="appendToDisplay('2')">2</button>
+            <button id="btn-three" onclick="appendToDisplay('3')">3</button>
+            <button id="btn-multiply" onclick="setOperatorTo('x')">x</button>
+            <button id="btn-zero" onclick="appendToDisplay('0')">0</button>
+            <button id="btn-decimal" onclick="appendToDisplay('.')">.</button>
+            <button id="btn-divide" onclick="setOperatorTo('÷')">÷</button>
+            <button id="btn-clear" onclick="clearEverything()">C</button>
+            <button id="btn-calculate" onclick="calculateEverything()">=</button>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
