@@ -10,7 +10,6 @@ let sOTHasRun = false;
 let answer;
 
 function appendToDisplay(number) {
-  console.log("Function appendToDisplay Start");
   if (sOTHasRun) {
 
   }
@@ -28,7 +27,6 @@ function appendToDisplay(number) {
 
   // Limit display length to 14 numbers
   if (currentDisplayedText.length >=14) {
-    console.log("Too Many Numbers")
     return;
   }
   // Appending the Button to the Display
@@ -38,11 +36,9 @@ function appendToDisplay(number) {
     displayElement.innerText += number;
   }
 
-  console.log('Function appendToDisplay End');
 }
 
 function setOperatorTo(operator) {
-  console.log('Function setOperatorTo Start');
 
   const currentDisplayedText = displayElement.innerText;
 
@@ -52,7 +48,6 @@ function setOperatorTo(operator) {
     operator.includes('x') ||
     operator.includes('÷')
   ) {
-    console.log(operator);
     operatorUsed = operator;
   }
 
@@ -85,28 +80,18 @@ function setOperatorTo(operator) {
   console.log(firstNumberInput);
   displayElement.innerText = "0"
   sOTHasRun = true;
-
-  console.log('Function setOperatorTo End');
 }
 
 function clearEverything() {
-  console.log('Function clearEverything Start');
 
   displayElement.innerText = '0';
   sOTHasRun = false;
   answer = 0
-
-  console.log('Function clearEverything End');
 }
 
 function calculateEverything() {
-  console.log('Function addEverything Start');
-  console.log(displayElement.innerText);
   secondNumberInput = displayElement.innerText;
 
-  // Identify the Operator.
-  // Then cleanse the displayElement.innerText tags with .replace().
-  // Then immediately change the firstNumberInput to the first set of numbers.
   firstNumberInput = Number(firstNumberInput);
   secondNumberInput = Number(secondNumberInput);
   if (operatorUsed === '+') {
@@ -122,13 +107,8 @@ function calculateEverything() {
     answer = firstNumberInput / secondNumberInput;
     displayElement.innerText = answer;
   }
-
-  console.log(firstNumberInput + secondNumberInput);
-
-  console.log('Function addEverything End');
 }
 function changeH1() {
   let myH1 = document.getElementById('myH1');
   myH1.innerText = 'You Changed it to this'
-  console.log(myH1);
 }
