@@ -128,7 +128,7 @@ function calculateEverything() {
   console.log('Function addEverything End');
 }
 function changeH1() {
-  let myText = document.getElementById('myH1');
-  myText.innerText = 'You Changed it to this'
-  console.log(myText)
+  let myH1 = document.getElementById('myH1');
+  myH1.innerText = 'You Changed it to this'
+  console.log(myH1);
 }
